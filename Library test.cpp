@@ -10,7 +10,7 @@ int main() {
         "20001", "01/01/2020");
     library[1].setBookDetails("The Silmarillion", "J.R.R. Tolkien",
         "20002", "02/02/2021");
-    library[2].setBookDetails("The Children of Húrin", "J.R.R. Tolkien",
+    library[2].setBookDetails("The Children of Hurin", "J.R.R. Tolkien",
         "20003", "03/03/2022");
     library[3].setBookDetails("Unfinished Tales", "J.R.R. Tolkien",
         "20004", "04/04/2023");
@@ -60,7 +60,7 @@ int main() {
             break;
 
         case 3: // Display All
-            cout << "\n--- Middle-earth Library Catalog ---\n";
+            cout << "\n--- Catalog ---\n";
             for (int i = 0; i < 5; i++) {
                 library[i].displayBookDetails();
             }
@@ -71,6 +71,6 @@ int main() {
         }
     }
 
-    cout << "Program exited. May the stars shine upon your path!\n";
+    cout << "Program exited.\n";
     return 0;
 }
