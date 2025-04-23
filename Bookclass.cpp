@@ -44,8 +44,9 @@ void Book::returnBook() {
 string Book::getISBN() { return ISBN; }
 bool Book::isAvailable() { return Availability; }
 
-bool Book::compareISBN(Book a, Book b) {
-    return a.ISBN < b.ISBN;
+Book::Book(const std::string& Title, const std::string& Author, const std::string& ISBN, const std::string& DateAdd, bool Availability)
+    : Title(Title), Author(Author), ISBN(ISBN), DateAdd(DateAdd), Availability(Availability)
+{
 }
 
 void Book::sortBookData(Book books[], int size) {
